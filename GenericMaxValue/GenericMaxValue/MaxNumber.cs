@@ -29,6 +29,17 @@ namespace GenericMaxValue
             else
                 Console.WriteLine("Max Value is {0}", num3);
         }
-        
+
+        //Method Used To Find  Max Number
+        public static void FindStringMaxNum(string num1, string num2, string num3)
+        {
+            if (num1.CompareTo(num2) >= 0 && num1.CompareTo(num2) >= 0)
+                Console.WriteLine("Max Value is {0}", num1);
+            else if (num2.CompareTo(num3) >= 0)
+                Console.WriteLine("Max Value is {0}", num2);
+            else
+                Console.WriteLine("Max Value is {0}", num3);
+        }
+
     }
 }

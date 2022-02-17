@@ -27,6 +27,26 @@ namespace GenericMaxValue
             Console.WriteLine("Test Case 3:" + TestCases.GetString(TestCases.FloatCase3));
             MaxNumber.FindFloatMaxNum(TestCases.FloatCase3[0], TestCases.FloatCase3[1], TestCases.FloatCase3[2]);
             Console.ReadLine();
+
+            Console.WriteLine("\nTest Case 1:" + TestCases.GetString(TestCases.StringCase1));
+            MaxNumber.FindStringMaxNum(TestCases.StringCase1[0], TestCases.StringCase1[1], TestCases.StringCase1[2]);
+            Console.WriteLine("Test Case 2:" + TestCases.GetString(TestCases.FloatCase2));
+            MaxNumber.FindStringMaxNum(TestCases.StringCase2[0], TestCases.StringCase2[1], TestCases.StringCase2[2]);
+            Console.WriteLine("Test Case 3:" + TestCases.GetString(TestCases.StringCase3));
+            MaxNumber.FindStringMaxNum(TestCases.StringCase3[0], TestCases.StringCase3[1], TestCases.StringCase3[2]);
+            Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
