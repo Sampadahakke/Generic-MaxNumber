@@ -36,5 +36,40 @@ namespace GenericMaxValue
         {
             return $"[{testCase[0]}, {testCase[1]}, {testCase[2]}]";
         }
+
+        public static void IntTest()
+        {
+            Console.WriteLine("Test Case 1:" +GetString(IntCase1));
+            MaxNumber.FindMaxNum<int>(IntCase1[0],IntCase1[1],IntCase1[2]);
+            Console.WriteLine("Test Case 2:" + GetString(IntCase2));
+            MaxNumber.FindMaxNum<int>(IntCase2[0],IntCase2[1],IntCase2[2]);
+            Console.WriteLine("Test Case 3:" +GetString(IntCase3));
+            MaxNumber.FindMaxNum<int>(IntCase3[0],IntCase3[1],IntCase3[2]);
+            Console.ReadKey();
+        }
+
+        public static void FloatTest()
+        {
+            Console.WriteLine("Test Case 1:" + GetString(FloatCase1));
+            MaxNumber.FindMaxNum<float>(FloatCase1[0], FloatCase1[1], FloatCase1[2]);
+            Console.WriteLine("Test Case 2:" + GetString(FloatCase2));
+            MaxNumber.FindMaxNum<float>(FloatCase2[0], FloatCase2[1], FloatCase2[2]);
+            Console.WriteLine("Test Case 3:" + GetString(FloatCase3));
+            MaxNumber.FindMaxNum<float>(FloatCase3[0], FloatCase3[1], FloatCase3[2]);
+            Console.ReadKey();
+
+        }
+
+        public static void StringTest()
+        {
+            Console.WriteLine("Test Case 1:" + GetString(StringCase1));
+            MaxNumber.FindMaxNum<string>(StringCase1[0], StringCase1[1], StringCase1[2]);
+            Console.WriteLine("Test Case 2:" + GetString(StringCase2));
+            MaxNumber.FindMaxNum<string>(StringCase2[0], StringCase2[1], StringCase2[2]);
+            Console.WriteLine("Test Case 3:" + GetString(StringCase3));
+            MaxNumber.FindMaxNum<string>(StringCase3[0], StringCase3[1], StringCase3[2]);
+            Console.ReadKey();
+        }
+
     }
 }

@@ -9,37 +9,14 @@ namespace GenericMaxValue
     internal class MaxNumber
     {
         //Method Used To Find Integer Max Number
-        public static void FindMaxNum( int num1, int num2, int num3)
+        public static void FindMaxNum<T>( T Value1, T Value2, T Value3) where T : IComparable 
         {
-            if (num1.CompareTo(num2) >= 0 && num1.CompareTo(num2) >= 0)
-                Console.WriteLine("Max Value is {0}", num1);
-            else if (num2.CompareTo(num3) >= 0)
-                Console.WriteLine("Max Value is {0}", num2);
-            else
-                Console.WriteLine("Max Value is {0}", num3);
+            T[] array = new T[] { Value1, Value2, Value3 };
+            Array.Sort(array);
+            Console.WriteLine($"Max value is: {array[2]}");
         }
         
-        //Method Used To Find Float Max Number
-        public static void FindFloatMaxNum(float num1, float num2, float num3)
-        {
-            if (num1.CompareTo(num2) >= 0 && num1.CompareTo(num2) >= 0)
-                Console.WriteLine("Max Value is {0}", num1);
-            else if (num2.CompareTo(num3) >= 0)
-                Console.WriteLine("Max Value is {0}", num2);
-            else
-                Console.WriteLine("Max Value is {0}", num3);
-        }
-
-        //Method Used To Find  Max Number
-        public static void FindStringMaxNum(string num1, string num2, string num3)
-        {
-            if (num1.CompareTo(num2) >= 0 && num1.CompareTo(num2) >= 0)
-                Console.WriteLine("Max Value is {0}", num1);
-            else if (num2.CompareTo(num3) >= 0)
-                Console.WriteLine("Max Value is {0}", num2);
-            else
-                Console.WriteLine("Max Value is {0}", num3);
-        }
-
     }
+
 }
+
