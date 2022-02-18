@@ -8,8 +8,10 @@ namespace GenericMaxValue
 {
     internal class MaxNumber<T> where T : IComparable
     {
+        //Array Used To Sort
          private T[] array;
           
+        //Constructor Of Class
         public MaxNumber(T[] array)
         {
             this.array=array;
@@ -24,7 +26,13 @@ namespace GenericMaxValue
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine($"Max value is: {array[array.Length-1]}");
+            PrintMax(array);
+        }
+        
+        //Method Used To Print Value
+        private void PrintMax(T[] array)
+        {
+           Console.WriteLine($"Max value is: {array[array.Length-1]}");
         }
     }
         

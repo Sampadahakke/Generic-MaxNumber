@@ -18,7 +18,7 @@ namespace GenericMaxValue
                 Console.WriteLine("\nMaximum Value: \n1.Integer Values \n2.Float Values \n3.String Values \n4.Exit");
                 Console.Write("Please Enter Your Choice = ");
                 int Choice=Convert.ToInt32(Console.ReadLine());
-
+                //Using Switch Case For Option Entered By User
                 switch(Choice)
                 {
                     case 1:

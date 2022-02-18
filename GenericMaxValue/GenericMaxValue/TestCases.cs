@@ -45,9 +45,9 @@ namespace GenericMaxValue
         {
             Console.WriteLine("Test Case 1:");
             maxInt.FindMaxNum(IntCase1);  
-            Console.WriteLine("Test Case 2:");
+            Console.WriteLine("\nTest Case 2:");
             maxInt.FindMaxNum(IntCase2);
-            Console.WriteLine("Test Case 3:");
+            Console.WriteLine("\nTest Case 3:");
             maxInt.FindMaxNum(IntCase3);
             Console.ReadKey();
         }
@@ -57,9 +57,9 @@ namespace GenericMaxValue
         {
             Console.WriteLine("Test Case 1:");
             maxFloat.FindMaxNum(FloatCase1);
-            Console.WriteLine("Test Case 2:");
+            Console.WriteLine("\nTest Case 2:");
             maxFloat.FindMaxNum(FloatCase2);
-            Console.WriteLine("Test Case 3:");
+            Console.WriteLine("\nTest Case 3:");
             maxFloat.FindMaxNum(FloatCase3);
             Console.ReadKey();
 
@@ -70,9 +70,9 @@ namespace GenericMaxValue
         {
             Console.WriteLine("Test Case 1:");
             maxString.FindMaxNum(StringCase1);
-            Console.WriteLine("Test Case 2:");
+            Console.WriteLine("\nTest Case 2:");
             maxString.FindMaxNum(StringCase2);
-            Console.WriteLine("Test Case 3:");
+            Console.WriteLine("\nTest Case 3:");
             maxString.FindMaxNum(StringCase3);
             Console.ReadKey();
         }
