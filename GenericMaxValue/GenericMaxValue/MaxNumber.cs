@@ -16,25 +16,15 @@ namespace GenericMaxValue
         }
 
         //Method Used To Find Integer Max Number 
-        public void FindMaxNum( T Value1, T Value2, T Value3) 
+        public void FindMaxNum(params T []array) 
         {
-            
+            this.array = array;
             Array.Sort(array);
-            Console.WriteLine($"Max value is: {array[2]}");
-            TestMax(array[0] = Value1, array[1] = Value2, array[2] = Value3);
-            
-        }
-
-        
-        
-        public static T TestMax( T Value1, T Value2, T Value3)
-        {
-            if (Value1.CompareTo(Value2) >= 0 && Value1.CompareTo(Value2) >= 0)
-                return Value1;
-            else if (Value2.CompareTo(Value3) >= 0)
-                return Value2;
-            else
-                return Value3;
+            foreach ( T i in array)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine($"Max value is: {array[array.Length-1]}");
         }
     }
         
